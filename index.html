@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,26 @@
     ul { padding-left:20px; }
     li { margin-bottom:8px; line-height:1.5; }
     footer { text-align:center; padding:20px; font-size:14px; color:#888; transition:color 0.3s; }
+    /* Icon styling */
+.contact a i {
+  margin-right: 8px;
+  color: #0077b5; /* LinkedIn blue as default */
+  transition: color 0.3s;
+}
 
+/* Change icon colors on hover */
+.contact a:hover i {
+  color: #005582; /* Darker blue on hover */
+}
+
+/* Make icons lighter in dark mode */
+body.dark-mode .contact a i {
+  color: #4dabf7; /* Light blue for dark background */
+}
+
+body.dark-mode .contact a:hover i {
+  color: #82cfff; /* Even brighter on hover */
+}
     /* Dark Mode Styles */
     body.dark-mode { background:#121212; color:#eee; }
     body.dark-mode header { background:#1f1f1f; color:#eee; }
@@ -42,26 +62,7 @@
     }
     #darkModeToggle:hover { background: #555; }
   </style>
-  /* Icon styling */
-.contact a i {
-  margin-right: 8px;
-  color: #0077b5; /* LinkedIn blue as default */
-  transition: color 0.3s;
-}
-
-/* Change icon colors on hover */
-.contact a:hover i {
-  color: #005582; /* Darker blue on hover */
-}
-
-/* Make icons lighter in dark mode */
-body.dark-mode .contact a i {
-  color: #4dabf7; /* Light blue for dark background */
-}
-
-body.dark-mode .contact a:hover i {
-  color: #82cfff; /* Even brighter on hover */
-}
+ 
 </head>
 <body>
 
@@ -79,7 +80,6 @@ body.dark-mode .contact a:hover i {
   <a href="https://drive.google.com/file/d/192dbu-zcIwSuY0ZOsBubJb9V2FChUGdM/view?usp=sharing" target="_blank"><i class="fa-solid fa-briefcase"></i> Visit My Portfolio</a>
 </div>
 </header>
-
 <main>
   <section>
     <h3>Who I Am</h3>
