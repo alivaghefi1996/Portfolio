@@ -42,10 +42,6 @@
     }
     #darkModeToggle:hover { background: #555; }
   </style>
-  .contact a i {
-  margin-right: 8px;
-  color: #0077b5;
-}
 </head>
 <body>
 
@@ -148,3 +144,23 @@
 
 </body>
 </html>
+/* Icon styling */
+.contact a i {
+  margin-right: 8px;
+  color: #0077b5; /* LinkedIn blue as default */
+  transition: color 0.3s;
+}
+
+/* Change icon colors on hover */
+.contact a:hover i {
+  color: #005582; /* Darker blue on hover */
+}
+
+/* Make icons lighter in dark mode */
+body.dark-mode .contact a i {
+  color: #4dabf7; /* Light blue for dark background */
+}
+
+body.dark-mode .contact a:hover i {
+  color: #82cfff; /* Even brighter on hover */
+}
